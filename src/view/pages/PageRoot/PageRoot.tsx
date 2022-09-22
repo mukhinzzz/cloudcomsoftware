@@ -6,12 +6,18 @@ const AuthPage = lazy(() =>
     default: AuthPage,
   }))
 );
+const MainPage = lazy(() =>
+  import("../MainPage").then(({ MainPage }) => ({
+    default: MainPage,
+  }))
+);
 
 export function PageRoot() {
   return (
     <Suspense fallback={null}>
       <Routes>
-        <Route path={"/"} element={<AuthPage />} />
+        <Route path={"/"} element={<MainPage />} />
+        <Route path={"auth"} element={<AuthPage />} />
       </Routes>
     </Suspense>
   );
