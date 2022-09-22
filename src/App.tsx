@@ -1,5 +1,12 @@
+import { BrowserRouter } from "react-router-dom";
+import { PageRoot } from "./Pages/PageRoot";
+
 function App() {
-  return <h1>Project will be here</h1>;
+  return (
+    <BrowserRouter>
+      <PageRoot />
+    </BrowserRouter>
+  );
 }
 
 export default App;
