@@ -22,6 +22,12 @@ const ChosenExtensionPage = lazy(() =>
   }))
 );
 
+const ErrorPage = lazy(() =>
+  import("../ErrorPage").then(({ ErrorPage }) => ({
+    default: ErrorPage,
+  }))
+);
+
 export function PageRoot() {
   return (
     <Suspense fallback={null}>
@@ -33,7 +39,7 @@ export function PageRoot() {
           path={"extension/:extensionId"}
           element={<ChosenExtensionPage />}
         />
-        {/* <Route path={'*'} */}
+        <Route path={"*"} element={<ErrorPage />} />
       </Routes>
     </Suspense>
   );
