@@ -14,7 +14,7 @@ export function MainPage() {
     if (accessToken && clientId) {
       getExtensions(clientId)
         .then((response) => {
-          dispatch(setExtensions(response));
+          dispatch(setExtensions(response.data));
           navigate("/all-extensions");
         })
         .catch(() => navigate("/auth"));

@@ -1,24 +1,38 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+export interface IAuthState {
+  login: string;
+  password: string;
+  appId: string;
+  appSecret: string;
+}
+
+interface IActions {
+  payload: string;
+  type: string;
+}
+
 export const authSlice = createSlice({
   name: "auth",
   initialState: {
     login: "",
     password: "",
-    token: "",
     appId: "",
     appSecret: "",
   },
 
   reducers: {
-    setLogin: (state, action) => void (state.login = action.payload),
-    setPassword: (state, action) => void (state.password = action.payload),
-    setToken: (state, action) => void (state.token = action.payload),
-    setAppId: (state, action) => void (state.appId = action.payload),
-    setAppSecret: (state, action) => void (state.appSecret = action.payload),
+    setLogin: (state: IAuthState, action: IActions) =>
+      void (state.login = action.payload),
+    setPassword: (state: IAuthState, action: IActions) =>
+      void (state.password = action.payload),
+    setAppId: (state: IAuthState, action: IActions) =>
+      void (state.appId = action.payload),
+    setAppSecret: (state: IAuthState, action: IActions) =>
+      void (state.appSecret = action.payload),
   },
 });
 
-export const { setLogin, setPassword, setAppId, setAppSecret, setToken } =
+export const { setLogin, setPassword, setAppId, setAppSecret } =
   authSlice.actions;
 export default authSlice.reducer;

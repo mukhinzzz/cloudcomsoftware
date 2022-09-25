@@ -2,12 +2,26 @@ import { useSelector, useDispatch } from "react-redux";
 import { setExtensions } from "../../../store/extensionsSlice/extensionsSlice";
 import { useParams, useNavigate } from "react-router-dom";
 import { deleteExtension } from "../../../services/chosenExtension";
+import { IState } from "../../../store/store";
+import { IExtension } from "./../../../services/extensions/index";
 
 export function ChosenExtensionPage() {
   const { extensionId } = useParams();
-  const { extensions } = useSelector((state: any) => state.extensions);
+  const { extensions } = useSelector((state: IState) => state.extensions);
   const dispatch = useDispatch();
-  let extensionObject: any;
+  // interface IExtensionObject {
+  //   name: string;
+  //   domain: string;
+  //   type: string;
+  //   status: string;
+  //   label: string;
+  //   extra_params: string;
+  //   dial_rule_limit: string;
+  //   caller_id_name: string;
+  //   create_date: string;
+  // }
+
+  let extensionObject: IExtension;
 
   const navigate = useNavigate();
 
@@ -19,8 +33,8 @@ export function ChosenExtensionPage() {
         .then(() => {
           dispatch(
             setExtensions(
-              extensions.filter((item: any) => {
-                return item.id !== extensionId;
+              extensions.filter((item: IExtension) => {
+                return item.id !== +extensionId;
               })
             )
           );
@@ -36,7 +50,7 @@ export function ChosenExtensionPage() {
     }
   }
 
-  extensions.forEach((item: any) => {
+  extensions.forEach((item: IExtension) => {
     if (item.id === +extensionId!) {
       extensionObject = item;
     }

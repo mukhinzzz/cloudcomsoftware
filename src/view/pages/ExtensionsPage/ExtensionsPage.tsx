@@ -4,11 +4,13 @@ import { setExtensions } from "../../../store/extensionsSlice/extensionsSlice";
 import { getExtensions } from "../../../services/extensions";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { IState } from "../../../store/store";
+import { IExtension } from "./../../../services/extensions/index";
 
 export function ExtensionsPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { extensions } = useSelector((state: any) => state.extensions);
+  const { extensions } = useSelector((state: IState) => state.extensions);
 
   async function getExtensionsToStore() {
     const clientId = localStorage.getItem("clientId");
@@ -30,10 +32,12 @@ export function ExtensionsPage() {
 
   return (
     <ul>
-      {extensions.map((item: any) => {
+      {extensions.map((item: IExtension) => {
         return (
           <>
-            <Link to={`/extension/${item.id}`}>{item.name}</Link>
+            <Link key={item.id} to={`/extension/${item.id}`}>
+              {item.name}
+            </Link>
             <br />
           </>
         );

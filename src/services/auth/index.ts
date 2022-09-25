@@ -1,12 +1,21 @@
 import $api from "..";
 import qs from "qs";
+import { AxiosResponse } from "axios";
+
+interface ITokenResponse {
+  access_token: string;
+  expires_in: number;
+  token_type: string;
+  scope: string;
+  refresh_token: string;
+}
 
 export async function getToken(
   login: string,
   password: string,
   appId: string,
   appSecret: string
-) {
+): Promise<AxiosResponse<ITokenResponse>> {
   const response = $api.post(
     "/oauth/token",
     qs.stringify({
@@ -17,16 +26,5 @@ export async function getToken(
       client_secret: appSecret,
     })
   );
-  // .then((response) => {
-  //   localStorage.setItem("accessToken", response.data.access_token);
-  //   localStorage.setItem("refreshToken", response.data.refresh_token);
-  //   // getClient();
-  // });
-
   return response;
 }
-//   .then(() => navigate("/all-extensions"));
-// .then(() => {
-//   console.log(localStorage.getItem("accessToken"));
-//   $api.get(userURL).then((response) => console.log(response));
-// });
