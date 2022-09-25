@@ -11,6 +11,16 @@ const MainPage = lazy(() =>
     default: MainPage,
   }))
 );
+const ExtensionsPage = lazy(() =>
+  import("../ExtensionsPage").then(({ ExtensionsPage }) => ({
+    default: ExtensionsPage,
+  }))
+);
+const ChosenExtensionPage = lazy(() =>
+  import("../ChosenExtensionPage").then(({ ChosenExtensionPage }) => ({
+    default: ChosenExtensionPage,
+  }))
+);
 
 export function PageRoot() {
   return (
@@ -18,6 +28,12 @@ export function PageRoot() {
       <Routes>
         <Route path={"/"} element={<MainPage />} />
         <Route path={"auth"} element={<AuthPage />} />
+        <Route path={"all-extensions"} element={<ExtensionsPage />} />
+        <Route
+          path={"extension/:extensionId"}
+          element={<ChosenExtensionPage />}
+        />
+        {/* <Route path={'*'} */}
       </Routes>
     </Suspense>
   );
