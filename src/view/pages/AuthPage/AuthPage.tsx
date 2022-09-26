@@ -30,6 +30,13 @@ export function AuthPage() {
     }
   }
 
+  function pasteTestInfo() {
+    dispatch(setLogin("Muhin_Ivan"));
+    dispatch(setPassword("123qweasdZXC"));
+    dispatch(setAppId("f8115578ec7246369ab37f73adb10c62"));
+    dispatch(setAppSecret("1e1c99cc6ba94893a7616e2ececaaf28"));
+  }
+
   async function handleFormSubmit(e: React.SyntheticEvent<EventTarget>) {
     e.preventDefault();
     await getToken(login, password, appId, appSecret)
@@ -44,44 +51,57 @@ export function AuthPage() {
   }
 
   return (
-    <form onSubmit={handleFormSubmit}>
-      <label>
-        ID{" "}
-        <input type="text" onChange={changeHandler} value={appId} id="app-id" />
-      </label>
-      <br />
-      <br />
-      <label>
-        {" "}
-        Секрет{" "}
-        <input
-          type="text"
-          onChange={changeHandler}
-          value={appSecret}
-          id="app-secret"
-        />
-      </label>
+    <>
+      <form onSubmit={handleFormSubmit}>
+        <label>
+          ID{" "}
+          <input
+            type="text"
+            onChange={changeHandler}
+            value={appId}
+            id="app-id"
+          />
+        </label>
+        <br />
+        <br />
+        <label>
+          {" "}
+          Секрет{" "}
+          <input
+            type="text"
+            onChange={changeHandler}
+            value={appSecret}
+            id="app-secret"
+          />
+        </label>
 
-      <br />
-      <br />
-      <label>
-        Логин{" "}
-        <input type="text" onChange={changeHandler} value={login} id="login" />
-      </label>
-      <br />
-      <br />
-      <label>
-        Пароль{" "}
-        <input
-          type="password"
-          onChange={changeHandler}
-          value={password}
-          id="password"
-        />
-      </label>
-      <br />
-      <br />
-      <input type="submit" />
-    </form>
+        <br />
+        <br />
+        <label>
+          Логин{" "}
+          <input
+            type="text"
+            onChange={changeHandler}
+            value={login}
+            id="login"
+          />
+        </label>
+        <br />
+        <br />
+        <label>
+          Пароль{" "}
+          <input
+            type="password"
+            onChange={changeHandler}
+            value={password}
+            id="password"
+          />
+        </label>
+        <br />
+        <br />
+        <input type="submit" />
+      </form>
+      <button onClick={pasteTestInfo}>Заполнить тестовой информацией</button>
+    </>
   );
 }
