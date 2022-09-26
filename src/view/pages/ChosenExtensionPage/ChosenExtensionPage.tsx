@@ -9,17 +9,6 @@ export function ChosenExtensionPage() {
   const { extensionId } = useParams();
   const { extensions } = useSelector((state: IState) => state.extensions);
   const dispatch = useDispatch();
-  // interface IExtensionObject {
-  //   name: string;
-  //   domain: string;
-  //   type: string;
-  //   status: string;
-  //   label: string;
-  //   extra_params: string;
-  //   dial_rule_limit: string;
-  //   caller_id_name: string;
-  //   create_date: string;
-  // }
 
   let extensionObject: IExtension;
 
