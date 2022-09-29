@@ -10,8 +10,8 @@ export function MainPage() {
   const navigate = useNavigate();
 
   async function handleGetExtensions() {
-    const accessToken = localStorage.getItem("accessToken");
-    const clientId = localStorage.getItem("clientId");
+    const accessToken = sessionStorage.getItem("accessToken");
+    const clientId = sessionStorage.getItem("clientId");
 
     if (accessToken && clientId) {
       getExtensions(clientId)

@@ -14,7 +14,7 @@ export function ExtensionsPage() {
   const { extensions } = useSelector((state: IState) => state.extensions);
 
   async function getExtensionsToStore() {
-    const clientId = localStorage.getItem("clientId");
+    const clientId = sessionStorage.getItem("clientId");
     if (clientId) {
       await getExtensions(clientId)
         .then((response) => dispatch(setExtensions(response.data)))

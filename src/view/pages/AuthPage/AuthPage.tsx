@@ -44,18 +44,18 @@ export function AuthPage() {
     dispatch(setPassword(""));
     dispatch(setAppId(""));
     dispatch(setAppSecret(""));
-    localStorage.clear();
+    sessionStorage.clear();
   }
 
   async function handleFormSubmit(e: React.SyntheticEvent<EventTarget>) {
     e.preventDefault();
     await getToken(login, password, appId, appSecret)
       .then((response) => {
-        localStorage.setItem("accessToken", response.data.access_token);
-        localStorage.setItem("refreshToken", response.data.refresh_token);
+        sessionStorage.setItem("accessToken", response.data.access_token);
+        sessionStorage.setItem("refreshToken", response.data.refresh_token);
         getClient()
           .then((response) => {
-            localStorage.setItem("clientId", String(response.data.client_id));
+            sessionStorage.setItem("clientId", String(response.data.client_id));
             navigate("/all-extensions");
           })
           .catch((e) => {

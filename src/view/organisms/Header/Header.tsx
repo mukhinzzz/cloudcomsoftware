@@ -18,7 +18,7 @@ export function Header() {
     dispatch(setPassword(""));
     dispatch(setAppId(""));
     dispatch(setAppSecret(""));
-    localStorage.clear();
+    sessionStorage.clear();
 
     navigate("/");
   }
@@ -29,7 +29,7 @@ export function Header() {
     <header className="header">
       <div className="container header__container">
         <Logo />
-        {localStorage.getItem("accessToken") ? (
+        {sessionStorage.getItem("accessToken") ? (
           <>
             <button
               onClick={logOut}

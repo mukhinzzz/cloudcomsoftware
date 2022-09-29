@@ -15,7 +15,7 @@ export function ChosenExtensionPage() {
 
   const navigate = useNavigate();
 
-  let clientId = localStorage.getItem("clientId");
+  let clientId = sessionStorage.getItem("clientId");
 
   function handleReturn() {
     navigate("/all-extensions");
