@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import store from "../../../store/store";
 import { BrowserRouter } from "react-router-dom";
 import { Header } from "./Header";
-import App from "./../../../App";
+import App from "../../../App";
 
 describe("Header", () => {
   it("Must be rendered on all pages", () => {

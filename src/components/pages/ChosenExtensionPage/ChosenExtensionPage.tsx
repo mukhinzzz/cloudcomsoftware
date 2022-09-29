@@ -3,7 +3,7 @@ import { setExtensions } from "../../../store/extensionsSlice/extensionsSlice";
 import { useParams, useNavigate } from "react-router-dom";
 import { deleteExtension } from "../../../services/chosenExtension";
 import { IState } from "../../../store/store";
-import { IExtension } from "./../../../services/extensions/index";
+import { IExtension } from "../../../services/extensions/index";
 import "./ChosenExtensionPage.scss";
 
 export function ChosenExtensionPage() {

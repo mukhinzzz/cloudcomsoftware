@@ -5,7 +5,7 @@ import { getExtensions } from "../../../services/extensions";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { IState } from "../../../store/store";
-import { IExtension } from "./../../../services/extensions/index";
+import { IExtension } from "../../../services/extensions/index";
 import "./ExtensionsPage.scss";
 
 export function ExtensionsPage() {
