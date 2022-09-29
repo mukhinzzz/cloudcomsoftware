@@ -26,7 +26,7 @@ export function MainPage() {
   }
 
   return (
-    <div className="main">
+    <div className="main" data-testid="main">
       <div className="container main__container">
         <h1 className="heading main__heading">Добавочные номера</h1>
         <div className="main__info">
@@ -47,6 +47,7 @@ export function MainPage() {
         <button
           className="button button_primary main__button btn-reset"
           onClick={handleGetExtensions}
+          data-testid="main button"
         >
           Посмотреть мои добавочные
         </button>

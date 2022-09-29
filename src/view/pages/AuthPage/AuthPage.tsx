@@ -70,7 +70,7 @@ export function AuthPage() {
   }
 
   return (
-    <div className="auth">
+    <div className="auth" data-testid="auth">
       <div className="container auth__container">
         <h1 className="heading auth__heading">Аутентификация</h1>
         <form className="form auth__form" onSubmit={handleFormSubmit}>
@@ -133,6 +133,7 @@ export function AuthPage() {
             <button
               className="button button_secondary auth__button auth__button_right btn-reset"
               onClick={pasteTestInfo}
+              data-testid="test_info"
             >
               Заполнить тестовой информацией
             </button>

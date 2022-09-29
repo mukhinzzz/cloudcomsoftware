@@ -26,7 +26,7 @@ export function Header() {
   const navigate = useNavigate();
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="container header__container">
         <Logo />
         {localStorage.getItem("accessToken") ? (
@@ -34,6 +34,7 @@ export function Header() {
             <button
               onClick={logOut}
               className="button btn-reset button_primary header__button header__button_logout"
+              data-testId="logout"
             >
               Разлогиниться
             </button>
@@ -42,12 +43,13 @@ export function Header() {
               src={logout}
               alt="Log out"
               onClick={logOut}
+              data-testid="logout"
             />
           </>
         ) : (
           ""
         )}
       </div>
-    </div>
+    </header>
   );
 }
