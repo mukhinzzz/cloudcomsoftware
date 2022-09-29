@@ -1,0 +1,70 @@
+@import "../../../variables.scss";
+
+.chosen-extension {
+  background-color: $main-gray-color;
+  // min-height: 100vh;
+}
+
+.chosen-extension__container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chosen-extension__list-item {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+
+  @media ($mobile) {
+    // font-size: 1.7em;
+    font-size: 9vw;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px solid $accent-orange-color;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+.chosen-extension__list {
+  font-size: 2em;
+  color: $accent-blue-color;
+  // line-height: 50px;
+  padding: 0;
+
+  & span {
+    color: $accent-orange-color;
+    font-weight: 400;
+
+    @media ($mobile) {
+      display: block;
+      margin-top: 5vw;
+    }
+  }
+}
+
+.chosen-extension__button-container {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  @media ($mobile) {
+    flex-direction: column;
+    min-width: 200px;
+    width: 100%;
+    height: 120px;
+  }
+}
+
+.chosen-extension__heading {
+  text-align: center;
+  margin-bottom: 0;
+
+  @media ($mobile) {
+    font-size: 10vw;
+  }
+}

@@ -1,0 +1,24 @@
+// COLORS
+$main-color: #ffffff;
+$main-gray-color: #f1f1f1;
+$font-black-color: #4d4d4d;
+$font-white-color: #ffffff;
+$accent-orange-color: #f19a57;
+$accent-blue-color: #7dc8eb;
+
+$orange-gradient: linear-gradient(270deg, #ff9547 0%, #ff8242 100%);
+
+// MEDIA
+
+$mobile: (
+  max-width: 768px,
+);
+$tablet: (
+  max-width: 1024px,
+);
+$notebook: (
+  max-width: 1440px,
+);
+$desktop: (
+  min-width: 1441px,
+);

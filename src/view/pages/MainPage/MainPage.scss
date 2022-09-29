@@ -1,0 +1,110 @@
+@import "../../../variables.scss";
+
+.main {
+  background: $main-gray-color;
+  // min-height: 100%;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  padding-bottom: 30px;
+}
+
+.main__bg {
+  // width: 300px;
+  height: 450px;
+
+  @media ($desktop) {
+    height: 550px;
+  }
+
+  @media ($tablet) {
+    display: none;
+  }
+}
+
+.main__info {
+  display: flex;
+  margin-top: 70px;
+}
+
+.main__description {
+  font-size: 1.5em;
+  width: 300px;
+  // background-color: $accent-blue-color;
+  background-color: #cfcfcf;
+  border-radius: 25px;
+  text-align: justify;
+  box-shadow: 0 0 0 #fff, 5px 5px 5px rgba(0, 45, 77, 30%),
+    10px 10px 10px rgba(0, 45, 77, 5%);
+  position: relative;
+  line-height: 50px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+
+  @media ($desktop) {
+    width: 400px;
+    font-size: 2.2em;
+  }
+
+  @media ($tablet) {
+    min-height: 400px;
+    min-width: 350px;
+  }
+
+  @media ($mobile) {
+    min-height: 400px;
+    min-width: 250px;
+  }
+}
+
+// & span {
+//   display: block;
+//   background-color: teal;
+// }
+
+// .main__button {
+//   margin-top: 20px;
+// }
+
+.main__description_first-line {
+  color: $accent-orange-color;
+  font-weight: 700;
+  margin-bottom: -30px;
+}
+
+.main__description_other-line {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.main__button {
+  margin-top: 120px;
+  @media ($desktop) {
+    padding: 30px 40px;
+    font-size: 1.3em;
+  }
+  @media ($mobile) {
+    min-width: 200px;
+  }
+}
+
+.main__heading {
+  text-align: center;
+
+  @media ($desktop) {
+    font-size: 4em;
+  }
+
+  @media ($mobile) {
+    font-size: 2.2em;
+  }
+}

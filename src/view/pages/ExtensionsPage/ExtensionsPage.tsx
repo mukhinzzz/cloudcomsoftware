@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { IState } from "../../../store/store";
 import { IExtension } from "./../../../services/extensions/index";
+import "./ExtensionsPage.scss";
 
 export function ExtensionsPage() {
   const dispatch = useDispatch();
@@ -31,17 +32,30 @@ export function ExtensionsPage() {
   }, []);
 
   return (
-    <ul>
-      {extensions.map((item: IExtension) => {
-        return (
-          <>
-            <Link key={item.id} to={`/extension/${item.id}`}>
-              {item.name}
-            </Link>
-            <br />
-          </>
-        );
-      })}
-    </ul>
+    <div className="extensions-page">
+      <div className="container extensions-page__container">
+        <h1 className="heading extensions-page__heading">
+          Ваши добавочные номера:
+        </h1>
+        <div className="extensions-page__links-container">
+          {extensions.map((item: IExtension) => {
+            return (
+              <>
+                <Link
+                  className="extensions-page__link"
+                  key={item.id}
+                  to={`/extension/${item.id}`}
+                >
+                  {item.name}
+                </Link>
+              </>
+            );
+          })}
+        </div>
+        <span className="extensions-page__description">
+          Вы можете кликнуть по номеру, чтобы увидеть дополнительную информацию
+        </span>
+      </div>
+    </div>
   );
 }

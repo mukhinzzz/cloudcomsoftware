@@ -1,0 +1,29 @@
+@import "../../../variables.scss";
+
+.error-page__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-page__heading {
+  color: $accent-blue-color;
+  text-align: center;
+}
+
+.error__image {
+  border-radius: 10px;
+  margin-bottom: 60px;
+  width: 450px;
+  height: 450px;
+
+  @media ($desktop) {
+    width: 550px;
+    height: 550px;
+  }
+
+  @media ($mobile) {
+    width: 50vw;
+    height: 50vw;
+  }
+}

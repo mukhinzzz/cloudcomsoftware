@@ -1,0 +1,41 @@
+@import "../../../variables.scss";
+
+.extensions-page {
+  background-color: $main-gray-color;
+  // min-height: 100vh;
+}
+
+.extensions-page__container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  // height: 100vh;
+}
+
+.extensions-page__link {
+  font-size: 3em;
+  color: $accent-blue-color;
+  margin-bottom: 60px;
+
+  &:hover {
+    color: #40aee0;
+  }
+
+  &:active {
+    color: #a5cee1;
+  }
+}
+
+.extensions-page__links-container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  // min-height: 450px;
+}
+
+.extensions-page__description {
+  margin-bottom: 40px;
+}

@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { deleteExtension } from "../../../services/chosenExtension";
 import { IState } from "../../../store/store";
 import { IExtension } from "./../../../services/extensions/index";
+import "./ChosenExtensionPage.scss";
 
 export function ChosenExtensionPage() {
   const { extensionId } = useParams();
@@ -15,6 +16,10 @@ export function ChosenExtensionPage() {
   const navigate = useNavigate();
 
   let clientId = localStorage.getItem("clientId");
+
+  function handleReturn() {
+    navigate("/all-extensions");
+  }
 
   async function handleDeletion() {
     if (clientId && extensionId) {
@@ -58,19 +63,56 @@ export function ChosenExtensionPage() {
   } = extensionObject!;
 
   return (
-    <>
-      <ul>
-        <li>Name: {name || "Is not defined"}</li>
-        <li>Domain: {domain || "Is not defined"}</li>
-        <li>Type: {type || "Is not defined"}</li>
-        <li>Status: {status || "Is not defined"}</li>
-        <li>Label: {label || "Is not defined"}</li>
-        <li>Extra params: {extra_params || "Is not defined"}</li>
-        <li>Dial rule limit: {dial_rule_limit || "Is not defined"}</li>
-        <li>Caller id name: {caller_id_name || "Is not defined"}</li>
-        <li>Create date: {create_date || "Is not defined"}</li>
-      </ul>
-      <button onClick={handleDeletion}>Delete extension</button>
-    </>
+    <div className="chosen-extension">
+      <div className="container chosen-extension__container">
+        <h1 className="heading chosen-extension__heading">
+          Информация&nbsp;по выбранному номеру:
+        </h1>
+        <ul className="list chosen-extension__list">
+          <li className="chosen-extension__list-item list-reset">
+            Номер: <span> {name || "Неизвестно"} </span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Домен:<span> {domain || "Неизвестно"}</span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Тип: <span> {type || "Неизвестно"}</span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Статус:<span> {status || "Неизвестно"}</span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Заметка:<span> {label || "Неизвестно"}</span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Параметры: <span> {extra_params || "Неизвестно"}</span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Ограничения соединения:
+            <span> {dial_rule_limit || "Неизвестно"}</span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Имя вызывающего: <span> {caller_id_name || "Неизвестно"}</span>
+          </li>
+          <li className="chosen-extension__list-item list-reset">
+            Дата создания:<span> {create_date || "Неизвестно"}</span>
+          </li>
+        </ul>
+        <div className="chosen-extension__button-container">
+          <button
+            className="button btn-reset button_secondary chosen-extension__button"
+            onClick={handleDeletion}
+          >
+            Удалить этот номер
+          </button>
+          <button
+            className="button btn-reset button_primary  chosen-extension__button"
+            onClick={handleReturn}
+          >
+            Вернуться обратно
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -1,0 +1,52 @@
+@import "../../../variables.scss";
+
+.auth {
+  // height: 100vh;
+  background-color: $main-gray-color;
+}
+
+.auth__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.auth__form {
+  //   display: flex;
+  //   flex-direction: column;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  //   color: $accent-blue-color;
+}
+
+.auth__buttons {
+  @media ($mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.auth__button_right {
+  margin-left: 20px;
+
+  @media ($mobile) {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}
+
+// .auth__button {
+//   min-width: 300px;
+// }
+
+.auth__heading {
+  @media ($mobile) {
+    font-size: 2.3em;
+  }
+}

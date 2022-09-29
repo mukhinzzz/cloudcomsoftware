@@ -1,0 +1,136 @@
+@import "./variables.scss";
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto"),
+    url("./fonts/roboto-v27-latin_cyrillic-300.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+    url("./fonts/roboto-v27-latin_cyrillic-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"),
+    url("./fonts/roboto-v27-latin_cyrillic-500.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"),
+    url("./fonts/roboto-v27-latin_cyrillic-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+* {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+// body {
+//   width: 100%;
+// }
+
+// .container {
+//   margin: 0 60px;
+//   padding: 0 20px;
+//   width: 100%;
+// }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  overflow-anchor: none;
+  margin: 0;
+  font-weight: 400;
+  background-color: $main-color;
+  min-height: 100vh;
+  background-color: $main-gray-color;
+}
+
+.container {
+  max-width: 1430px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.button {
+  padding: 15px 20px;
+  border-radius: 6px;
+  color: $main-color;
+}
+// .visually-hidden {
+//   position: absolute !important;
+//   clip: rect(1px 1px 1px 1px);
+//   /* IE6, IE7 */
+//   clip: rect(1px, 1px, 1px, 1px);
+//   padding: 0 !important;
+//   border: 0 !important;
+//   height: 1px !important;
+//   width: 1px !important;
+//   overflow: hidden;
+// }
+
+.button_primary {
+  background: linear-gradient(270deg, #ff9547 0%, #ff8242 100%);
+
+  &:hover {
+    background: linear-gradient(270deg, #fd8936 0%, #fa6318 100%);
+  }
+
+  &:active {
+    background: linear-gradient(270deg, #fbbb8d 0%, #fa8e58 100%);
+  }
+}
+
+.button_secondary {
+  background: $accent-blue-color;
+
+  &:hover {
+    background: #40aee0;
+  }
+
+  &:active {
+    background: #a5cee1;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../variables.scss";
+
+.header {
+  background-color: $main-color;
+  height: 80px;
+  box-shadow: 0 -1px 0 #fff, 0 0 1px rgba(0, 45, 77, 30%),
+    0 3px 4px rgba(0, 45, 77, 5%);
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header__button_logout {
+  position: absolute;
+  right: 50px;
+
+  @media ($mobile) {
+    display: none;
+  }
+}
+
+.header__icon_logout {
+  display: none;
+  @media ($mobile) {
+    display: inline;
+    position: absolute;
+    right: 50px;
+    width: 40px;
+    cursor: pointer;
+  }
+}
