@@ -26,10 +26,6 @@ export function WebsocketPage() {
     ws.current?.send("Generate number");
   }
 
-  //   function closeConnection() {
-  //     ws.current?.close(1000);
-  //   }
-
   return (
     <div className="websocket">
       <div className="container websocket__container">
@@ -41,7 +37,6 @@ export function WebsocketPage() {
         <p className="description websocket__description">
           Номер генерируется сервером и отправляется по протоколу WebSocket
         </p>
-        {/* <p>Инструкция:</p> */}
         <p className="description websocket__description">
           Перед тестом нужно запустить локальный сервер из файла main.py
         </p>
@@ -74,33 +69,6 @@ export function WebsocketPage() {
         >
           Получить счастливый номер
         </button>
-        {/* <button
-          className="button button_secondary websocket__button btn-reset"
-          onClick={createConnection}
-        >
-          Реконнект
-        </button> */}
-        {/* <button
-          className="button button_secondary websocket__button btn-reset"
-          onClick={closeConnection}
-        >
-          Закрыть соединение
-        </button> */}
-        {/* <p>
-          Затем нажать кнопку "Открыть WS-канал". Если соединение будет успешно
-          открыто, то статус соединения изменится на "Открыто"
-        </p>
-        <p>Затем нажмите кнопку "Сгенерировать счастливый добавочный"</p>
-        <p>
-          В этот момент на сервер будет послано сообщение, а он сгенерирует нам
-          случайный добавочный номер
-        </p>
-        <p>Мы получим число от сервера мгновенно</p>
-        <p>
-          Использование счастливого добавочного дает вам +100 к удаче и
-          иммунитет к мобилизации
-        </p>
-        <p>Окончив сеанс, нажмите "Закрыть WS-канал"</p> */}
       </div>
     </div>
   );

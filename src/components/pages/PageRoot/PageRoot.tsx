@@ -36,7 +36,7 @@ const WebsocketPage = lazy(() =>
 
 export function PageRoot() {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<h1>Loading...</h1>}>
       <Routes>
         <Route path={"/"} element={<MainPage />} />
         <Route path={"auth"} element={<AuthPage />} />

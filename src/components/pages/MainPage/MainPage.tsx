@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { getExtensions } from "../../../services/extensions";
 import { setExtensions } from "../../../store/extensionsSlice/extensionsSlice";
@@ -10,7 +8,6 @@ import "./MainPage.scss";
 export function MainPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const ws = useRef<WebSocket | null>(null);
 
   async function handleGetExtensions() {
     const accessToken = sessionStorage.getItem("accessToken");
@@ -27,25 +24,6 @@ export function MainPage() {
       navigate("/auth");
     }
   }
-
-  function socketTest() {
-    if (ws.current) ws.current.send("TEST");
-  }
-
-  // function testSocket() {
-  //     ws.current = new WebSocket("ws://localhost:12345");
-  //     ws.current.onopen = () => alert("Соединение открыто");
-  //     ws.current.onmessage = (e) => alert(e.data);
-  //     // if (ws.current) ws.current.send("TEST");
-  //   }
-
-  // useEffect(() => {
-  //   ws.current = new WebSocket("ws://localhost:12345");
-  //   // ws.current.onopen = () => alert("Соединение открыто");
-  //   ws.current.onmessage = (e) => alert(e.data);
-
-  //   return () => ws.current?.close();
-  // }, []);
 
   return (
     <div className="main" data-testid="main">
@@ -72,12 +50,6 @@ export function MainPage() {
           data-testid="main button"
         >
           Посмотреть мои добавочные
-        </button>
-        <button
-          className="button button_secondary main__button btn-reset"
-          onClick={socketTest}
-        >
-          Проверить соединение с WebSocket
         </button>
       </div>
     </div>

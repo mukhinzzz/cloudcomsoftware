@@ -1,8 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import store from "../../../store/store";
-import { BrowserRouter } from "react-router-dom";
-import { Header } from "./Header";
 import App from "../../../App";
 
 describe("Header", () => {

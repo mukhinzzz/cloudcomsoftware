@@ -1,10 +1,5 @@
 @import "../../../variables.scss";
 
-.extensions-page {
-  background-color: $main-gray-color;
-  // min-height: 100vh;
-}
-
 .extensions-page__container {
   padding-top: 50px;
   display: flex;
@@ -12,7 +7,6 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  // height: 100vh;
 }
 
 .extensions-page__link {
@@ -32,8 +26,6 @@
 .extensions-page__links-container {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  // min-height: 450px;
 }
 
 .extensions-page__description {

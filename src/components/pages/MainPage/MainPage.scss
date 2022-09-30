@@ -1,10 +1,5 @@
 @import "../../../variables.scss";
 
-.main {
-  background: $main-gray-color;
-  // min-height: 100%;
-}
-
 .main__container {
   display: flex;
   flex-direction: column;
@@ -15,7 +10,6 @@
 }
 
 .main__bg {
-  // width: 300px;
   height: 450px;
 
   @media ($desktop) {
@@ -35,7 +29,6 @@
 .main__description {
   font-size: 1.5em;
   width: 300px;
-  // background-color: $accent-blue-color;
   background-color: #cfcfcf;
   border-radius: 25px;
   text-align: justify;
@@ -65,15 +58,6 @@
     min-width: 250px;
   }
 }
-
-// & span {
-//   display: block;
-//   background-color: teal;
-// }
-
-// .main__button {
-//   margin-top: 20px;
-// }
 
 .main__description_first-line {
   color: $accent-orange-color;

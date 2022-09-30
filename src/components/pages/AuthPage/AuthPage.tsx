@@ -81,7 +81,6 @@ export function AuthPage() {
               onChange={changeHandler}
               value={appId}
               id="app-id"
-              // placeholder="Введите App ID..."ы
             />
           </label>
           <br />
@@ -94,7 +93,6 @@ export function AuthPage() {
               onChange={changeHandler}
               value={appSecret}
               id="app-secret"
-              // placeholder="Введите App Secret..."
             />
           </label>
 
@@ -107,7 +105,6 @@ export function AuthPage() {
               onChange={changeHandler}
               value={login}
               id="login"
-              // placeholder="Введите логин..."
             />
           </label>
           <br />
@@ -119,7 +116,6 @@ export function AuthPage() {
               onChange={changeHandler}
               value={password}
               id="password"
-              // placeholder="Введите пароль..."
             />
           </label>
           <br />

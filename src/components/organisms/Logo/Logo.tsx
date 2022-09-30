@@ -10,13 +10,11 @@ export function Logo() {
   }
 
   return (
-    // <a className="logo header__logo" href="/">
     <img
       className="logo header__logo"
       src={logo}
       alt="Logotype"
       onClick={navigateToMain}
     />
-    // </a>
   );
 }

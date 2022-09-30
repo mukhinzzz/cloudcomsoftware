@@ -1,10 +1,5 @@
 @import "../../../variables.scss";
 
-.chosen-extension {
-  background-color: $main-gray-color;
-  // min-height: 100vh;
-}
-
 .chosen-extension__container {
   padding-top: 50px;
   display: flex;
@@ -19,7 +14,6 @@
   margin-top: 20px;
 
   @media ($mobile) {
-    // font-size: 1.7em;
     font-size: 9vw;
     text-align: center;
     margin-top: 40px;
@@ -32,7 +26,6 @@
 .chosen-extension__list {
   font-size: 2em;
   color: $accent-blue-color;
-  // line-height: 50px;
   padding: 0;
 
   & span {
