@@ -27,6 +27,15 @@
   }
 }
 
+.header__button_websocket {
+  position: absolute;
+  left: 50px;
+
+  @media ($mobile) {
+    display: none;
+  }
+}
+
 .header__icon_logout {
   display: none;
   @media ($mobile) {
@@ -34,6 +43,19 @@
     position: absolute;
     right: 50px;
     width: 40px;
+    cursor: pointer;
+  }
+}
+
+.header__link_websocket {
+  display: none;
+  @media ($mobile) {
+    display: inline;
+    color: $accent_blue_color;
+    position: absolute;
+    left: 50px;
+    font-size: 2em;
+    font-weight: 700;
     cursor: pointer;
   }
 }

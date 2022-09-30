@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-import { PageRoot } from "./view/pages/PageRoot";
-import { Header } from "./view/organisms/Header";
+import { PageRoot } from "./components/pages/PageRoot";
+import { Header } from "./components/organisms/Header";
 import "./App.scss";
 
 function App() {

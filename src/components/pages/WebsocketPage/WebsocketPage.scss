@@ -1,0 +1,65 @@
+@import "../../../variables.scss";
+
+.websocket__heading {
+  text-align: center;
+}
+
+.websocket__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.websocket__description {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3em;
+  max-width: 550px;
+  min-width: 300px;
+}
+
+.lucky-number__number {
+  color: $accent_blue_color;
+  font-weight: 700;
+  font-size: 5em;
+}
+
+.websocket__connection-description {
+  font-size: 2em;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.websocket__connection-status {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.websocket__connection-status_green {
+  color: green;
+}
+.websocket__connection-status_red {
+  color: red;
+}
+
+.lucky-number__description {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.lucky-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.websocket__button {
+  @media ($mobile) {
+    margin-bottom: 40px;
+  }
+}

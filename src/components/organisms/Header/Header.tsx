@@ -7,6 +7,7 @@ import {
   setAppId,
   setAppSecret,
 } from "../../../store/authSlice/authSlice";
+import { Link } from "react-router-dom";
 import logout from "../../../img/logout.svg";
 import "./Header.scss";
 
@@ -23,6 +24,10 @@ export function Header() {
     navigate("/");
   }
 
+  function goTest() {
+    navigate("/websocket");
+  }
+
   const navigate = useNavigate();
 
   return (
@@ -34,7 +39,7 @@ export function Header() {
             <button
               onClick={logOut}
               className="button btn-reset button_primary header__button header__button_logout"
-              data-testId="logout"
+              data-testid="logout"
             >
               Разлогиниться
             </button>
@@ -49,6 +54,18 @@ export function Header() {
         ) : (
           ""
         )}
+        <button
+          className="button btn-reset button_secondary header__button header__button_websocket"
+          onClick={goTest}
+        >
+          Проверить WebSocket
+        </button>
+        <Link
+          className="link header__link header__link_websocket"
+          to="/websocket"
+        >
+          WS
+        </Link>
       </div>
     </header>
   );

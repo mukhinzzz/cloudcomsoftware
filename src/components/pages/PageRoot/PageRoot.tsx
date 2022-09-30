@@ -28,6 +28,12 @@ const ErrorPage = lazy(() =>
   }))
 );
 
+const WebsocketPage = lazy(() =>
+  import("../WebsocketPage").then(({ WebsocketPage }) => ({
+    default: WebsocketPage,
+  }))
+);
+
 export function PageRoot() {
   return (
     <Suspense fallback={null}>
@@ -39,6 +45,7 @@ export function PageRoot() {
           path={"extension/:extensionId"}
           element={<ChosenExtensionPage />}
         />
+        <Route path={"websocket"} element={<WebsocketPage />} />
         <Route path={"*"} element={<ErrorPage />} />
       </Routes>
     </Suspense>
