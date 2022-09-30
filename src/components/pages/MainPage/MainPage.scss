@@ -13,11 +13,6 @@
   height: 450px;
   width: 315px;
 
-  @media ($desktop) {
-    height: 550px;
-    width: 386px;
-  }
-
   @media ($tablet) {
     display: none;
   }
