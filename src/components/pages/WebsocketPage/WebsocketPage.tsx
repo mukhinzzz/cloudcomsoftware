@@ -38,7 +38,7 @@ export function WebsocketPage() {
           Номер генерируется сервером и отправляется по протоколу WebSocket
         </p>
         <p className="description websocket__description">
-          Перед тестом нужно запустить локальный сервер из файла main.py
+          Перед тестом нужно запустить локальный сервер из файла server.py
         </p>
         {luckyNumber ? (
           <div className="lucky-number websocket__lucky-number">
@@ -68,6 +68,12 @@ export function WebsocketPage() {
           onClick={sendRequestForNumber}
         >
           Получить счастливый номер
+        </button>
+        <button
+          className="button button_secondary websocket__button btn-reset"
+          onClick={createConnection}
+        >
+          Реконнект
         </button>
       </div>
     </div>

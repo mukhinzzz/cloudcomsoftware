@@ -1,3 +1,4 @@
+import { Fallback } from "../../organisms/Fallback";
 import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -36,7 +37,7 @@ const WebsocketPage = lazy(() =>
 
 export function PageRoot() {
   return (
-    <Suspense fallback={<h1>Loading...</h1>}>
+    <Suspense fallback={<Fallback />}>
       <Routes>
         <Route path={"/"} element={<MainPage />} />
         <Route path={"auth"} element={<AuthPage />} />
