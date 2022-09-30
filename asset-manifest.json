@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cloudcomsoftware/static/css/main.79d046cc.css",
-    "main.js": "/cloudcomsoftware/static/js/main.61582b8b.js",
-    "static/css/320.a29a7d0c.chunk.css": "/cloudcomsoftware/static/css/320.a29a7d0c.chunk.css",
+    "main.js": "/cloudcomsoftware/static/js/main.54a56134.js",
+    "static/css/320.faf42db4.chunk.css": "/cloudcomsoftware/static/css/320.faf42db4.chunk.css",
     "static/js/320.cc69c713.chunk.js": "/cloudcomsoftware/static/js/320.cc69c713.chunk.js",
     "static/css/401.e6b8f02b.chunk.css": "/cloudcomsoftware/static/css/401.e6b8f02b.chunk.css",
     "static/js/401.36ba0e37.chunk.js": "/cloudcomsoftware/static/js/401.36ba0e37.chunk.js",
@@ -26,8 +26,8 @@
     "static/media/logout.svg": "/cloudcomsoftware/static/media/logout.f42b13849615ee3d01da1e09776602b7.svg",
     "index.html": "/cloudcomsoftware/index.html",
     "main.79d046cc.css.map": "/cloudcomsoftware/static/css/main.79d046cc.css.map",
-    "main.61582b8b.js.map": "/cloudcomsoftware/static/js/main.61582b8b.js.map",
-    "320.a29a7d0c.chunk.css.map": "/cloudcomsoftware/static/css/320.a29a7d0c.chunk.css.map",
+    "main.54a56134.js.map": "/cloudcomsoftware/static/js/main.54a56134.js.map",
+    "320.faf42db4.chunk.css.map": "/cloudcomsoftware/static/css/320.faf42db4.chunk.css.map",
     "320.cc69c713.chunk.js.map": "/cloudcomsoftware/static/js/320.cc69c713.chunk.js.map",
     "401.e6b8f02b.chunk.css.map": "/cloudcomsoftware/static/css/401.e6b8f02b.chunk.css.map",
     "401.36ba0e37.chunk.js.map": "/cloudcomsoftware/static/js/401.36ba0e37.chunk.js.map",
@@ -44,6 +44,6 @@
   },
   "entrypoints": [
     "static/css/main.79d046cc.css",
-    "static/js/main.61582b8b.js"
+    "static/js/main.54a56134.js"
   ]
 }
