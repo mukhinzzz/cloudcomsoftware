@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cloudcomsoftware/static/css/main.79d046cc.css",
-    "main.js": "/cloudcomsoftware/static/js/main.54a56134.js",
+    "main.js": "/cloudcomsoftware/static/js/main.b964acdc.js",
     "static/css/320.faf42db4.chunk.css": "/cloudcomsoftware/static/css/320.faf42db4.chunk.css",
     "static/js/320.cc69c713.chunk.js": "/cloudcomsoftware/static/js/320.cc69c713.chunk.js",
     "static/css/401.e6b8f02b.chunk.css": "/cloudcomsoftware/static/css/401.e6b8f02b.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/754.b7ccc344.chunk.js": "/cloudcomsoftware/static/js/754.b7ccc344.chunk.js",
     "static/css/333.f9ee0a8e.chunk.css": "/cloudcomsoftware/static/css/333.f9ee0a8e.chunk.css",
     "static/js/333.3b1b3df2.chunk.js": "/cloudcomsoftware/static/js/333.3b1b3df2.chunk.js",
-    "static/css/70.3e25abc6.chunk.css": "/cloudcomsoftware/static/css/70.3e25abc6.chunk.css",
+    "static/css/70.947b913f.chunk.css": "/cloudcomsoftware/static/css/70.947b913f.chunk.css",
     "static/js/70.306a472e.chunk.js": "/cloudcomsoftware/static/js/70.306a472e.chunk.js",
     "static/js/254.2ade9357.chunk.js": "/cloudcomsoftware/static/js/254.2ade9357.chunk.js",
     "static/js/808.3360821e.chunk.js": "/cloudcomsoftware/static/js/808.3360821e.chunk.js",
@@ -26,7 +26,7 @@
     "static/media/logout.svg": "/cloudcomsoftware/static/media/logout.f42b13849615ee3d01da1e09776602b7.svg",
     "index.html": "/cloudcomsoftware/index.html",
     "main.79d046cc.css.map": "/cloudcomsoftware/static/css/main.79d046cc.css.map",
-    "main.54a56134.js.map": "/cloudcomsoftware/static/js/main.54a56134.js.map",
+    "main.b964acdc.js.map": "/cloudcomsoftware/static/js/main.b964acdc.js.map",
     "320.faf42db4.chunk.css.map": "/cloudcomsoftware/static/css/320.faf42db4.chunk.css.map",
     "320.cc69c713.chunk.js.map": "/cloudcomsoftware/static/js/320.cc69c713.chunk.js.map",
     "401.e6b8f02b.chunk.css.map": "/cloudcomsoftware/static/css/401.e6b8f02b.chunk.css.map",
@@ -37,13 +37,13 @@
     "754.b7ccc344.chunk.js.map": "/cloudcomsoftware/static/js/754.b7ccc344.chunk.js.map",
     "333.f9ee0a8e.chunk.css.map": "/cloudcomsoftware/static/css/333.f9ee0a8e.chunk.css.map",
     "333.3b1b3df2.chunk.js.map": "/cloudcomsoftware/static/js/333.3b1b3df2.chunk.js.map",
-    "70.3e25abc6.chunk.css.map": "/cloudcomsoftware/static/css/70.3e25abc6.chunk.css.map",
+    "70.947b913f.chunk.css.map": "/cloudcomsoftware/static/css/70.947b913f.chunk.css.map",
     "70.306a472e.chunk.js.map": "/cloudcomsoftware/static/js/70.306a472e.chunk.js.map",
     "254.2ade9357.chunk.js.map": "/cloudcomsoftware/static/js/254.2ade9357.chunk.js.map",
     "808.3360821e.chunk.js.map": "/cloudcomsoftware/static/js/808.3360821e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79d046cc.css",
-    "static/js/main.54a56134.js"
+    "static/js/main.b964acdc.js"
   ]
 }
