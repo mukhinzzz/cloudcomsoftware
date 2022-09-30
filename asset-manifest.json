@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/cloudcomsoftware/static/css/main.d4c4fc5f.css",
-    "main.js": "/cloudcomsoftware/static/js/main.af69837f.js",
+    "main.js": "/cloudcomsoftware/static/js/main.1336b5b3.js",
     "static/css/320.faf42db4.chunk.css": "/cloudcomsoftware/static/css/320.faf42db4.chunk.css",
     "static/js/320.cc69c713.chunk.js": "/cloudcomsoftware/static/js/320.cc69c713.chunk.js",
-    "static/css/401.fd377529.chunk.css": "/cloudcomsoftware/static/css/401.fd377529.chunk.css",
+    "static/css/401.3a25df68.chunk.css": "/cloudcomsoftware/static/css/401.3a25df68.chunk.css",
     "static/js/401.36ba0e37.chunk.js": "/cloudcomsoftware/static/js/401.36ba0e37.chunk.js",
     "static/css/967.116d53e7.chunk.css": "/cloudcomsoftware/static/css/967.116d53e7.chunk.css",
     "static/js/967.9c5da991.chunk.js": "/cloudcomsoftware/static/js/967.9c5da991.chunk.js",
@@ -26,10 +26,10 @@
     "static/media/logout.svg": "/cloudcomsoftware/static/media/logout.f42b13849615ee3d01da1e09776602b7.svg",
     "index.html": "/cloudcomsoftware/index.html",
     "main.d4c4fc5f.css.map": "/cloudcomsoftware/static/css/main.d4c4fc5f.css.map",
-    "main.af69837f.js.map": "/cloudcomsoftware/static/js/main.af69837f.js.map",
+    "main.1336b5b3.js.map": "/cloudcomsoftware/static/js/main.1336b5b3.js.map",
     "320.faf42db4.chunk.css.map": "/cloudcomsoftware/static/css/320.faf42db4.chunk.css.map",
     "320.cc69c713.chunk.js.map": "/cloudcomsoftware/static/js/320.cc69c713.chunk.js.map",
-    "401.fd377529.chunk.css.map": "/cloudcomsoftware/static/css/401.fd377529.chunk.css.map",
+    "401.3a25df68.chunk.css.map": "/cloudcomsoftware/static/css/401.3a25df68.chunk.css.map",
     "401.36ba0e37.chunk.js.map": "/cloudcomsoftware/static/js/401.36ba0e37.chunk.js.map",
     "967.116d53e7.chunk.css.map": "/cloudcomsoftware/static/css/967.116d53e7.chunk.css.map",
     "967.9c5da991.chunk.js.map": "/cloudcomsoftware/static/js/967.9c5da991.chunk.js.map",
@@ -44,6 +44,6 @@
   },
   "entrypoints": [
     "static/css/main.d4c4fc5f.css",
-    "static/js/main.af69837f.js"
+    "static/js/main.1336b5b3.js"
   ]
 }
